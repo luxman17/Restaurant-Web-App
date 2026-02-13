@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Title of the document</title>
+</head>
+
+<body>
+
+
+
+<h1> Order Page </h1>
+
+
+<form id="submit-order" action="/submit-order" method="POST" >
+
+
+    <label for="fname">First Name:</label><br>
+    <input type="text" id="fname" name="fname"><br>
+    <label for="lname">Last Name:</label><br>
+    <input type="text" id="lname" name="lname"><br>
+    <label for="tn">Table Number:</label><br>
+    <input type="tn" id="tn" name="tn">
+    
+    <table>
+
+
+        <thead>
+            <tr>
+                <th>Select</th>
+                <th>Item</th>
+                <th>Price</th>
+                <th>Quantity</th>
+            </tr>
+        </thead>
+
+
+        <tbody id="items-list">
+
+
+
+
+        
+        </tbody>
+        
+    </table>
+    <input type="submit">
+    <h2 id="total"></h2>
+
+
+
+</form>
+
+
+
+
+<script src="js/order.js"></script>
+</body>
+
+
+
+</html>
