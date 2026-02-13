@@ -35,7 +35,15 @@ app.get('/api/receipts/:id', (req, res) => {
 
 })
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '/views/order.html'));
+  res.sendFile(path.join(__dirname, '/views/home.html'));
+});
+
+app.get('/order', (req, res) => {
+  res.sendFile(path.join(__dirname, '/views/order.html'));
+});
+
+app.get('/menu', (req, res) => {
+  res.sendFile(path.join(__dirname, '/views/menu.html'));
 });
 
 app.post('/api/receipts', express.json(), (req, res) => {
