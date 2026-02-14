@@ -49,7 +49,7 @@ app.get('/menu', (req, res) => {
 app.post('/api/receipts', express.json(), (req, res) => {
     const newOrder = req.body;
     
-    if(!newOrder){
+    if(!newOrder || newOrder.reciept[0].chosenItems.length === 0){
       return res.status(400).json({msg:"Nothing Ordered"})
 
     }
